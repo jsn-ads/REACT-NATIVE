@@ -11,3 +11,8 @@ FORMAS DE CRIAR UM PROJETO
 
     - Expo CLI       (Iniciante)
     - RN CLI         (Avançado)
+
+COMANDOS 
+
+    Iniciando um PROJETO
+        npx create-expo-app --template
