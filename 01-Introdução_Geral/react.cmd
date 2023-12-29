@@ -12,6 +12,11 @@ FORMAS DE CRIAR UM PROJETO
     - Expo CLI       (Iniciante)
     - RN CLI         (Avançado)
 
+Expo GO (Expo CLI)
+    - https://expo.dev/login(criar caso não tenha uma conta)
+    - Baixa App no dispositivo(mobile)
+    - Nodejs 
+
 COMANDOS 
 
     Criando um PROJETO
