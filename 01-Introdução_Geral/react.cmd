@@ -14,5 +14,14 @@ FORMAS DE CRIAR UM PROJETO
 
 COMANDOS 
 
-    Iniciando um PROJETO
+    Criando um PROJETO
         npx create-expo-app --template
+
+    Iniciando um PROJETO
+        npx expo start
+
+    Parando Servidor
+        CTRL + C
+
+    Reiniciando PROJETO
+        R
