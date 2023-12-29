@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "01-projApp",
-    "slug": "01-projApp",
+    "name": "oneApp",
+    "slug": "oneApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
