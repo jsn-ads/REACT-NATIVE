@@ -30,3 +30,6 @@ COMANDOS
 
     Reiniciando PROJETO
         R
+    --Help: caso npx expo esteja dando erro para criar ou start no projeto (pacote desatualizado ou npx não esteja instalado)
+        npm install expo
+        
