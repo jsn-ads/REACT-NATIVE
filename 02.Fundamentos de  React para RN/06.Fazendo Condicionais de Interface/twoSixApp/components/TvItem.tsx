@@ -13,6 +13,7 @@ export const TvItem = () =>
     let model = 'QN90 New QLed';
     let inch = 55;
     let price = 5000;
+    let originalPrice = 6000;
 
     return (
         <View style={style.container}>
@@ -22,6 +23,11 @@ export const TvItem = () =>
             <Text style={style.attributes}>{`Polegada: ${inch}`}</Text>
             <Text style={style.price}>{`Preço: R$ ${price.toFixed(2)}`}</Text>
             <Text style={style.attributes}>{`Unidade: ${soma(4,6)}`}</Text>
+            {(price < originalPrice) && 
+                <View>
+                     <Text>Promoção Extra!</Text>
+                </View> 
+            }
         </View>
     );
 }
