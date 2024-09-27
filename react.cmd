@@ -35,4 +35,4 @@ COMANDOS
         
     New minor version of npm available! 10.2.5 -> 10.8.3
     Changelog: https://github.com/npm/cli/releases/tag/v10.8.3
-    Run npm install -g npm@10.8.3 to update!
+    npm install -g npm@10.8.3 to update
