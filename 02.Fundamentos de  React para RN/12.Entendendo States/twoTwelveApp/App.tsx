@@ -4,13 +4,16 @@ import { SafeAreaView, StyleSheet, StatusBar, Text, Button} from 'react-native';
 export default function App() {
 
   const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
 
   const handleButtonOne = () =>{
     setName('Cristina');
+    setLastName('Monik');
   }
 
   const handleButtonTwo = () =>{
-    setName('Neto');
+    setName('José');
+    setLastName('Neto')
   }
 
   return (
@@ -20,15 +23,15 @@ export default function App() {
 
         <Text style={styles.title}>TwoTwelveApp</Text>
 
-        <Text style={styles.subitle}>Meu nome é {name}</Text>
+        <Text style={styles.subitle}>Meu nome é {name} {lastName}</Text>
 
         <Button 
-          title='Mudar para Cristina'
+          title='Mudar para Cristina Monik'
           onPress={handleButtonOne}
         />
 
         <Button 
-          title='Mudar para Neto'
+          title='Mudar para José Neto'
           onPress={handleButtonTwo}
         />
 
