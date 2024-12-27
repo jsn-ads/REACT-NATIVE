@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, StatusBar } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, StatusBar, Button } from 'react-native';
 import { Person } from './types/person';
 
 export default function twoFourTeenApp() {
@@ -13,6 +13,14 @@ export default function twoFourTeenApp() {
 
 //Functions
 
+  const changePerson = (newName: string, newAge: number, newHeight: number) =>{
+    setPerson({
+      ...person,
+      name: newName,
+      age: newAge,
+      height : newHeight
+    })
+  }
 
 // APP
   return (
@@ -25,7 +33,9 @@ export default function twoFourTeenApp() {
         <Text style={styles.person}>Idade: {person.age}</Text>
         <Text style={styles.person}>Altura: {person.height}</Text>
         {person.weight && <Text style={styles.person}>Peso: {person.weight}kg</Text>}
-        
+
+        <Button title='Inserir Dados' onPress={() => changePerson('Neto',36,1.80)}/>
+    
     </SafeAreaView>
   );
 

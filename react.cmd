@@ -1,4 +1,5 @@
-COMO FUNCIONA O REACT NATIVE
+==================================================REACT NATIVE==============================================
+
     Android -> Kotlin
     iOS -> Swift
 
@@ -7,7 +8,8 @@ COMO FUNCIONA O REACT NATIVE
     - Build (traduz o scrip na linguagem nativa do sistema)
         - React Native
 
-FORMAS DE CRIAR UM PROJETO
+==================================================CONFIGURAÇÕES==============================================
+
 
     - Expo CLI       (Iniciante)
     - RN CLI         (Avançado)
@@ -17,22 +19,26 @@ Expo GO (Expo CLI)
     - Baixa App no dispositivo(mobile)
     - Nodejs 
 
-COMANDOS 
+====================================================COMANDOS================================================
 
-    Criando um PROJETO
+    @REM Criando um PROJETO
         npx create-expo-app --template
 
-    Iniciando um PROJETO
+    @REM startando o PROJETO
         npx expo start
 
-    Parando Servidor
+    @REM Parando Servidor
         CTRL + C
 
-    Reiniciando PROJETO
+    @REM Reiniciando PROJETO
         R
-    --Help: caso npx expo esteja dando erro para criar ou start no projeto (pacote desatualizado ou npx não esteja instalado)
+    @REM --Help: caso npx expo esteja dando erro para criar ou start no projeto (pacote desatualizado ou npx não esteja instalado)
         npm install expo
-        
+
+======================================================EXTRA==================================================
+
     New minor version of npm available! 10.2.5 -> 10.8.3
     Changelog: https://github.com/npm/cli/releases/tag/v10.8.3
-    npm install -g npm@10.8.3 to update
+
+    @REM atualizar NPM 
+        npm install -g npm@10.8.3 to update
