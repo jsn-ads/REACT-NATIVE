@@ -1,4 +1,4 @@
-import { SafeAreaView, StatusBar, StyleSheet, Text, View, Image } from 'react-native';
+import { SafeAreaView, StatusBar, StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
 
 export default function App() {
 
@@ -11,7 +11,12 @@ export default function App() {
     <SafeAreaView>
       <StatusBar barStyle="light-content" backgroundColor='#FFF' />
       <Text style={styles.title}>ThreeTwoApp</Text>
-      <Image style={styles.img} source={require('./assets/w2.png')}></Image>
+      <ImageBackground 
+        source={require('./assets/w2.png')}
+        style={styles.img}
+      >
+        <Text style={styles.title}>EM BREVE NOS CINEMAS</Text>
+      </ImageBackground>
     </SafeAreaView>
   );
 }
