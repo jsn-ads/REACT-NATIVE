@@ -1,21 +1,39 @@
-import { SafeAreaView, StatusBar, StyleSheet, Text, View, Image, ImageBackground } from 'react-native';
+import { SafeAreaView, StatusBar, StyleSheet, Text, View, Image, ImageBackground, Button } from 'react-native';
 
 export default function App() {
 
   // STATES
 
   // FUNCTIONS
+  const handleBuyTicket = () =>{
+    alert('ingresso comprado');
+  }
 
   // APP
   return (
     <SafeAreaView>
-      <StatusBar barStyle="light-content" backgroundColor='#FFF' />
-      <Text style={styles.title}>ThreeTwoApp</Text>
       <ImageBackground 
         source={require('./assets/w2.png')}
         style={styles.img}
       >
-        <Text style={styles.title}>EM BREVE NOS CINEMAS</Text>
+        <StatusBar barStyle="light-content" backgroundColor='#FFF' />
+        
+        <Text 
+          style={styles.title}
+        >
+          ThreeTwoApp
+        </Text>
+
+        <Text 
+          style={styles.title}
+        >
+          EM BREVE NOS CINEMAS
+        </Text>
+
+        <Button 
+          title='Compre o seu ingresso'
+          onPress={handleBuyTicket}
+        />
       </ImageBackground>
     </SafeAreaView>
   );
@@ -37,6 +55,6 @@ const styles = StyleSheet.create({
   },
   img:{
     width:'100%',
-    height:250
+    height:'100%'
   }
 });
